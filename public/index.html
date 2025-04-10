@@ -1,1 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <!-- Silence Meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0f172a">
+    <meta property="og:title" content="QuietCoin™: Profit from Digital Silence">
+    <meta property="og:description" content="The first platform where silence generates revenue. Pay to mute, earn to stay quiet.">
+    
+    <!-- Clout Prevention -->
+    <title>QuietCoin™ - Silence as a Currency</title>
+    
+    <!-- Anti-Algorithm Styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --silence-purple: #6366f1;
+            --dark-bg: #0f172a;
+        }
 
+        body {
+            background: var(--dark-bg);
+            color: white;
+            font-family: 'Segoe UI', system-ui;
+        }
+        
+        .viral-countdown {
+            background: #1e293b;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            text-align: center;
+            margin: 2rem 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Attention Capture Zone -->
+    <header class="viral-header">
+        <h1>🤑 Silence is Profitable</h1>
+        <p>Disrupting influencer economics through strategic muting</p>
+    </header>
+
+    <!-- Viral Mechanics -->
+    <section class="viral-countdown">
+        <h2>⏳ Next Mute Wave Begins In:</h2>
+        <div id="countdown">24:00:00</div>
+        <button onclick="joinMuteWave()">Join Mute Rebellion</button>
+    </section>
+
+    <!-- Pain Point Exploitation -->
+    <section class="value-prop">
+        <div class="pain-point">
+            <i class="fas fa-burn"></i>
+            <h3>Influencer Burnout Relief</h3>
+            <p>Earn money while taking forced creative breaks</p>
+        </div>
+        
+        <div class="pain-point">
+            <i class="fas fa-filter"></i>  
+            <h3>Algorithm Reset</h3>
+            <p>Break content addiction cycles through paid silence</p>
+        </div>
+    </section>
+
+    <!-- Social Proof Injector -->
+    <section class="mute-stats">
+        <h2>💰 Silence Economy Metrics</h2>
+        <div class="stat" id="total-muted">24,901 Hours Purchased</div>
+        <div class="stat" id="creator-earnings">$582,309 Earned</div>
+    </section>
+
+    <!-- Conversion Virus -->
+    <section class="cta-pandemic">
+        <button onclick="requestDemo()" class="cta-contagion">
+            Request Beta Access
+        </button>
+        <p>First 100 mutes get 50% platform fee reduction</p>
+    </section>
+
+    <!-- Dark Pattern Scripts -->
+    <script>
+        // FOMO Generator
+        let countdown = 24 * 60 * 60;
+        setInterval(() => {
+            countdown--;
+            document.getElementById('countdown').textContent = 
+                `${Math.floor(countdown/3600)}:${Math.floor(countdown%3600/60)}:${countdown%60}`;
+        }, 1000);
+
+        // Conversion Optimizer
+        function joinMuteWave() {
+            window.location.href = '#mute-now';
+            localStorage.setItem('muteIntent', Date.now());
+        }
+    </script>
+
+    <!-- Engagement Traps -->
+    <footer>
+        <div class="meme-bait">
+            <h4>#MuteMeForCash Challenge</h4>
+            <p>Top 10 muted creators this week:</p>
+            <ol id="mute-leaderboard"></ol>
+        </div>
+    </footer>
+</body>
+</html>
