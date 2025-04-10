@@ -1,0 +1,9 @@
+// firestore.rules
+match /creators/{creatorId} {
+  allow read: if request.auth != null;
+  allow write: if false;
+}
+
+match /mutes/{creatorId} {
+  allow create: if isValidPaymentSignature(request);
+}
