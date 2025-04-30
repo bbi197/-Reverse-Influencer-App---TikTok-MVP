@@ -1,4 +1,4 @@
-# 🔥 Reverse Influencer App - TikTok MVP
+# 🔥 Reverse Influencer App (hater mode)- TikTok MVP
 
 ## Overview
 
